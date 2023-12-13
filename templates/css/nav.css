@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.color-nav {
+    background-color: #000000;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-menu {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.main {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    padding-top: 75px;
+    color: white;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-text {
+    padding: 10px;
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    max-height: auto;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 15px;
+}
+
+.card {
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 15px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+</head>
+
+<body>
+    <header class="color-nav">
+        <nav class="nav-menu">
+            <div class="nav-brand">
+                <img src="" alt="">
+            </div>
+            <ul>
+                <li><a href="/home">Inicio</a></li>
+                <li><a href="/FrontPage">Video</a></li>
+                <li><a href="/webcam">Webcams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <section class="video">
+                <img src="{{ url_for('video') }}" alt="Subir video">
+            </section>
+            <!-- <div style="padding: 100px;"></div> -->
+
+            <div class="form-data">
+                <form method='POST' enctype="multipart/form-data" class="form-container">
+                    <div>
+                        <input type="number" name="alto" id="alto" placeholder="Ingrese el alto">
+                        <input type="number" name="ancho" id="ancho" placeholder="Ingrese el ancho">
+                    </div>
+
+
+                    <div class="centrar-contenedor">
+                        {{form.hidden_tag()}}
+                        {{form.file(class_="custom-file-input")}}
+                        <button type="submit" name="favorite" value="x" class="btnCustom">
+                            Subir video
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

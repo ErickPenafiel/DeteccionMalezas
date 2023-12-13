@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ObjectDetection-YOLOv8</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header class="color-nav">
+        <nav class="nav-menu">
+            <div class="nav-brand">
+                <img src="" alt="">
+            </div>
+            <ul>
+                <li><a href="/home">Inicio</a></li>
+                <li><a href="/FrontPage">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="title">
+                <h1>Deteccion de malezas y cuantificacion de areas afectadas</h1>
+            </div>
+
+            <div class="content">
+                <div class="content-text">
+                    <div class="card">
+                        <div data-aos="fade-right">
+                            <p>El proyecto consiste en la deteccion de malezas en cultivos de soja y maiz, y la
+                                cuantificacion
+                                de las areas afectadas por las mismas. Para ello se utilizo la red neuronal YOLOv8, la
+                                cual
+                                fue
+                                entrenada con imagenes de malezas en cultivos de soja y maiz. El proyecto fue
+                                desarrollado
+                                en
+                                Python, utilizando Flask para la creacion de la pagina web.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <div data-aos="fade-left">
+                        <img src="../static/images/YOLOv8-Object-Detection-Instance-Segmentation-0-8-screenshot.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content-img">
+                    <div data-aos="fade-right">
+                        <img src="../static/images/deepsort.png " alt="">
+                    </div>
+                </div>
+                <div class="content-text">
+                    <div class="card">
+                        <div data-aos="fade-left">
+                            <p>DeepSORT es comúnmente utilizado en aplicaciones de vigilancia, seguimiento de personas y
+                                vehículos, y en general, en cualquier escenario donde se requiera un seguimiento preciso
+                                y robusto de objetos en movimiento en tiempo real. Además, a menudo se integra con
+                                sistemas de detección de objetos para proporcionar una solución completa de seguimiento
+                                y análisis de video. En este proyecto fue utilizado para el seguimiento de los distintos
+                                tipos de plantas que son reconocidas y calcular su area solo una vez</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imagen-app">
+                <h2>Imagen de la Aplicación</h2>
+                <div data-aos="fade-top">
+
+                    <img src="../static/images/imagenapp.png" alt="">
+                </div>
+
+                <p>Video de Muestra: <a
+                        href="https://drive.google.com/file/d/1RtibvlG04m6jUe8OSvllNOS3t8CCiEvk/view?usp=sharing"
+                        class="btnCustom" target="_blank">Descargar Video</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactpage">
+
+    </div>
+
+    <footer>
+        &copy; 2023 ObjectDetection-YOLOv8 DeepSORT
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

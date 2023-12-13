@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.color-nav {
+    background-color: #000000;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-menu {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu ul li a:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.main {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+.content {
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content-img {
+    width: 50%;
+    max-width: 1000px;
+    height: auto;
+    max-height: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.content-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    filter: grayscale(0.6);
+    transition: all 0.5s ease-in-out;
+}
+
+.content-img img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.content-text {
+    padding: 10px;
+    width: 50%;
+}
+
+.video img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: auto;
+    border-radius: 15px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container input {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-container input:focus {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.form-container input[type=file] {
+    margin: 10px 0;
+    background-color: #000000;
+    color: white;
+    border: 1px solid #40798C;
+}
+
+.btnCustom {
+    background-color: #40798C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnCustom:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.centrar-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.custom-file-input {
+    display: inline-block;
+    padding: 8px 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.custom-file-input:focus {
+    outline: none;
+}
+
+.custom-file-input:hover {
+    background-color: #2980b9;
+}
+
+.card p {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #2980b9;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #2980b9;
+    color: white;
+    padding: 20px;
+}
+
+.imagen-app img {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+    filter: grayscale(0.6);
+    transition: all 0.5s ease-in-out;
+}
+
+.imagen-app img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.imagen-app h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.imagen-app .btnCustom {
+    text-decoration: none;
+}
+
+.imagen-app p {
+    text-align: center;
+    margin-top: 25px;
+}
